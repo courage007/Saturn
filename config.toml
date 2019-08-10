@@ -4,3 +4,9 @@ title = "Courage007"
 theme = "maupassant-hugo"
 # 设置生成路径
 # publishDir = "../courage007.github.io"
+
+# 设置友情链接
+[[params.links]]
+  title = "My GitHub"
+  name = "My GitHub"
+  url = "https://github.com/courage007"

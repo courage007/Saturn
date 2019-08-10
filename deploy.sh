@@ -6,6 +6,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # if using a theme, replace with `hugo -t <YOURTHEME>`
 hugo
 
+echo -e "\033[0;32mHugo Done.\033[0m"
 # Go To Public folder.
 cd public
 
@@ -26,6 +27,7 @@ git commit -m "$msg"
 # Push source and build repos.
 git push origin master
 
+echo -e "\033[0;32mGit Push done!\033[0m"
 # Come Back up to the Project Root
 cd ..
 
