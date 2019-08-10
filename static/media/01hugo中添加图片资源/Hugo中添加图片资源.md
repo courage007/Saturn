@@ -20,10 +20,10 @@ draft: false
 因为 Hugo 将 static 目录下的文件拷贝到 ``public`` 下，所以在 MD 中引用图片时，仅需要使用**基于static的全路径**即可。  
 代码示例如下：
 ```
-![Hugo使用图片资源](/media/01hugo中添加图片资源/img/Hugo使用图片资源.png)
+![Hugo使用图片资源](./img/Hugo使用图片资源.png)
 ```
-![Hugo使用图片资源](/media/01hugo中添加图片资源/img/Hugo使用图片资源.png)  
-注意：必须将生成路径指定到public下（默认情况下，不许手动设置），才能保证static中资源文件生成到待发布的网站中。原因目前为止。  
+![Hugo使用图片资源](./img/Hugo使用图片资源.png)  
+注意：必须将生成路径指定到public下（默认情况下，不许手动设置），才能保证static中资源文件生成到待发布的网站中。原因目前未知。  
 参考链接：  
 https://gohugo.io/content-management/page-resources/  
 http://juju.one/hugo-static-site-generator/  

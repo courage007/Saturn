@@ -6,20 +6,27 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # if using a theme, replace with `hugo -t <YOURTHEME>`
 hugo
 
-# Go To Public folder
+# Go To Public folder.
 cd public
+
+# Get Update from Remote Repoisty.
+git pull origin master
+echo -e "\033[0;32mPull updates from Remote Reposity.\033[0m"
+
 # Add changes to git.
-# git add .
+git add .
 
 # Commit changes.
-msg="rebuilding site `date`"
-#if [ $# -eq 1 ]
-#  then msg="$1"
-#fi
-#git commit -m "$msg"
+msg="[Release]Rebuilding Site `date`"
+if [ $# -eq 1 ]
+ then msg="$1"
+fi
+git commit -m "$msg"
 
 # Push source and build repos.
-#git push origin master
+git push origin master
 
 # Come Back up to the Project Root
 cd ..
+
+echo -e "\033[0;32mDeploy done!\033[0m"
